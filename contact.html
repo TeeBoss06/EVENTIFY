@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Eventify</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+  <a href="index.html" class="logo">Eventify</a>
+
+    <div class="menu">
+      <div class="menu-icon" id="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="dropdown" id="dropdown">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="register.html">Register</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+<section class="contact-section">
+  <div class="contact-container">
+
+    <h2>Contact Us</h2>
+    <p class="contact-subtitle">
+      Have a question, suggestion, or event inquiry? We will love to hear from you.
+    </p>
+
+    <div class="contact-content">
+
+      <!-- Left: Contact Details -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+
+        <p><strong>Phone:</strong> +234 907 125 9844</p>
+        <p><strong>Email:</strong> eventify@gmail.com</p>
+        <p><strong>Location:</strong> FUNAAB, Abeokuta, Nigeria</p>
+
+        <div class="contact-socials">
+          <p><strong>Follow Us:</strong></p>
+          <div class="social-item">
+            <img src="images/facebook.jpg" alt="Facebook">
+            <span>@eventify_official</span>
+          </div>
+          <div class="social-item">
+            <img src="images/instagram.jpg" alt="Instagram">
+            <span>@eventify_ng</span>
+          </div>
+          <div class="social-item">
+            <img src="images/x.jpg" alt="Twitter">
+            <span>@eventifyHQ</span>
+          </div>
+        </div>
+      </div>
+
+<!-- Right: Form -->
+<div class="contact-form">
+  <h3>Send Us a Message</h3>
+
+  <form id="contactForm">
+    <input type="text" placeholder="Your Full Name" required>
+    <input type="email" placeholder="Your Email Address" required>
+    <input type="text" placeholder="Subject" required>
+    <textarea placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <!-- Success Message -->
+  <p id="successMsg" style="display:none; color: #4CAF50; margin-top: 10px;">
+    Message sent successfully!
+  </p>
+</div>
+</section>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // prevent reload
+
+    // Show success feedback
+    document.getElementById("successMsg").style.display = "block";
+
+    // Clear form inputs
+    this.reset();
+
+    // Hide message after 3 seconds
+    setTimeout(() => {
+      document.getElementById("successMsg").style.display = "none";
+    }, 3000);
+  });
+</script>
+
+<footer class="footer">
+  <div class="footer-content">
+
+    <h3>Eventify</h3>
+    <p>Plan, Organize, Eventify.</p>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="register.html">Register</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-contact">
+      <p><strong>Phone:</strong> +234 907 125 9844</p>
+      <p><strong>Email:</strong> eventify@gmail.com</p>
+    </div>
+
+    <div class="social-icons">
+      <div class="social-item">
+        <img src="images/facebook.jpg" alt="Facebook">
+        <span>@eventify_official</span>
+      </div>
+
+      <div class="social-item">
+        <img src="images/instagram.jpg" alt="Instagram">
+        <span>@eventify_ng</span>
+      </div>
+
+      <div class="social-item">
+        <img src="images/x.jpg" alt="Twitter">
+        <span>@eventifyHQ</span>
+      </div>
+    </div>
+
+    <p class="copyright">
+      © 2025 Eventify. All Rights Reserved.
+    </p>
+
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

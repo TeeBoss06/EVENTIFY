@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event | Eventify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+  <a href="index.html" class="logo">Eventify</a>
+
+    <div class="menu">
+      <div class="menu-icon" id="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="dropdown" id="dropdown">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="register.html">Register</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </header>
+
+<section class="events">
+  <h1>Upcoming Events</h1>
+
+  <div class="event-list">
+
+   <div class="event-list">
+
+    <!-- Event 1 -->
+    <div class="event-card" data-event="event1">
+      <img src="images/digitalsummit.jpg" alt="Event 1">
+      <h2>OGUN Digital Summit</h2>
+      <p>Date: November 20, 2025</p>
+      <p>Time: 8:00 AM</p>
+      <p>Location: June 12 Cultural Center, Kuto, Abeokuta</p>
+      <div class="countdown" id="countdown1"></div>
+      <button class="view-btn" data-target="event1">View Details</button>
+    </div>
+
+    <!-- Event 2 -->
+    <div class="event-card" data-event="event2">
+      <img src="images/valentine.jpg" alt="Event 2">
+      <h2>Valentine's Day Dinner Gala</h2>
+      <p>Date: February 14, 2026</p>
+      <p>Time: 8:00 PM</p>
+      <p>Location: Lagos, Nigeria</p>
+      <div class="countdown" id="countdown2"></div>
+      <button class="view-btn" data-target="event2">View Details</button>
+    </div>
+
+    <!-- Event 3 -->
+    <div class="event-card" data-event="event3">
+      <img src="images/arts and cultural.jpg" alt="Event 3">
+      <h2>Arts and Cultural Festival</h2>
+      <p>Date: November 19, 2025</p>
+      <p>Time: 8:00 AM</p>
+      <p>Location: Ibadan, Nigeria</p>
+      <div class="countdown" id="countdown3"></div>
+      <button class="view-btn" data-target="event3">View Details</button>
+    </div>
+
+    <!-- Event 4 -->
+    <div class="event-card" data-event="event4">
+      <img src="images/bootcamp.jpg" alt="Event 4">
+      <h2>Digital Skills Bootcamp</h2>
+      <p>Date: January 10-12, 2026</p>
+      <p>Time: 8:00 AM</p>
+      <p>Location: Ilorin Innovation Hub, Ilorin, Nigeria</p>
+      <div class="countdown" id="countdown4"></div>
+      <button class="view-btn" data-target="event4">View Details</button>
+    </div>
+
+    <!-- Event 5 -->
+    <div class="event-card" data-event="event5">
+      <img src="images/christmas.jpg" alt="Event 5">
+      <h2>Christmas Funfest</h2>
+      <p>Date: December 19, 2025</p>
+      <p>Time: 8:00 AM</p>
+      <p>Location: God's Heritage, Osun, Nigeria</p>
+      <div class="countdown" id="countdown5"></div>
+      <button class="view-btn" data-target="event5">View Details</button>
+    </div>
+
+    <!-- Event 6 -->
+    <div class="event-card" data-event="event6">
+      <img src="images/new year countdown.jpg" alt="Event 6">
+      <h2>New Year Countdown Party</h2>
+      <p>Date: December 31, 2025</p>
+      <p>Time: 8:00 PM</p>
+      <p>Location: Lekki, Lagos, Nigeria</p>
+      <div class="countdown" id="countdown6"></div>
+      <button class="view-btn" data-target="event6">View Details</button>
+    </div>
+
+  </div>
+  </section>
+
+  <!-- ===== POPUP MODALS ===== -->
+<div class="modal" id="event1">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>OGUN Digital Summit</h2>
+    <p>It’s not just about lectures and assignments — it’s about growth, innovation, and real-world impact.</p>
+    <p>A Digital Summit where creativity meets technology and ideas come alive!</p>
+    <p><strong>Date:</strong> November 20, 2025</p>
+    <p><strong>Venue:</strong> June 12 Cultural Center, Kuto, Abeokuta</p>
+  </div>
+</div>
+
+<div class="modal" id="event2">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Valentine's Day Dinner Gala</h2>
+    <p>A romantic dinner with live music, couples’ games, and giveaways for couples.</p>
+    <p><strong>Date:</strong> February 14, 2026</p>
+    <p><strong>Venue:</strong> Lagos, Nigeria</p>
+  </div>
+</div>
+
+<div class="modal" id="event3">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Arts and Cultural Festival</h2>
+    <p>A colorful event that showcase traditional dance, food, music, and art from different tribes.</p>
+    <p><strong>Date:</strong> November 19, 2025</p>
+    <p><strong>Venue:</strong> Ibadan, Nigeria</p>
+  </div>
+</div>
+
+<div class="modal" id="event4">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Digital Skills Bootcamp</h2>
+    <p>A 3-day training in graphic design, content writing, and web development for beginners.</p>
+    <p><strong>Date:</strong> January 10–12, 2026</p>
+    <p><strong>Venue:</strong> Ilorin Innovation Hub, Ilorin, Nigeria</p>
+  </div>
+</div>
+
+<div class="modal" id="event5">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Christmas Funfest</h2>
+    <p>A fun-filled day with Santa’s visit, gift exchange, games, and bouncy castles for children.</p>
+    <p><strong>Date:</strong> December 19, 2025</p>
+    <p><strong>Venue:</strong> God's Heritage, Osun, Nigeria</p>
+  </div>
+</div>
+
+<div class="modal" id="event6">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>New Year Countdown Party</h2>
+    <p>A grand celebration with DJs, live music, and fireworks to welcome 2026!</p>
+    <p><strong>Date:</strong> December 31, 2025</p>
+    <p><strong>Venue:</strong> Lekki, Lagos, Nigeria</p>
+  </div>
+</div>
+
+ <footer class="footer">
+  <div class="footer-content">
+    <h3>Eventify</h3>
+    <p>Plan, Organize, Eventify.</p>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="register.html">Register</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-contact">
+      <p><strong>Phone:</strong> +234 800 000 0000</p>
+      <p><strong>Email:</strong> eventify@gmail.com</p>
+    </div>
+
+   <div class="social-icons">
+      <div class="social-item">
+        <img src="images/facebook.jpg" alt="Facebook">
+        <span>@eventify_official</span>
+      </div>
+
+      <div class="social-item">
+        <img src="images/instagram.jpg" alt="Instagram">
+        <span>@eventify_ng</span>
+      </div>
+
+      <div class="social-item">
+        <img src="images/x.jpg" alt="Twitter">
+        <span>@eventifyHQ</span>
+      </div>
+    </div>
+
+    <p class="copyright">© 2025 Eventify. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
