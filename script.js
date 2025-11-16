@@ -72,7 +72,7 @@ function startCountdown(elementId, targetDate) {
 if (document.getElementById("countdown1")) {
   startCountdown("countdown1", "November 20, 2025 00:00:00");
   startCountdown("countdown2", "February 14, 2026 00:00:00");
-  startCountdown("countdown3", "May 20, 2026 00:00:00");
+  startCountdown("countdown3", "November 19, 2025 00:00:00");
   startCountdown("countdown4", "January 10, 2026 00:00:00");
   startCountdown("countdown5", "December 19, 2025 00:00:00");
   startCountdown("countdown6", "December 31, 2025 00:00:00");
